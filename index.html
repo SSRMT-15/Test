@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin:0px;
+        }
+        .nav{
+            display: flex;
+            width:100%;
+            height:10vh;
+            background-color: white;
+        }
+        .left{
+            display: flex;
+            width: 100%;
+        }
+        .left {
+           font-size: 60px;
+           margin-left: 4%;
+           margin-top: 0.3%;
+           color: blue;
+        }
+        input{
+            width: 18%;
+            height: 5vh;
+            font-size: 15px;
+            margin-left: 1.5%;
+            margin-top: 1%;
+            border-radius: 20px;
+        }
+        .x{
+            font-size: 18px;
+            margin-left: -14%;
+            margin-top: 1.5%;
+            color: grey;
+        }
+        ::placeholder{
+            text-align: center;
+        }
+        .home{
+            font-size: 20px;
+            margin-left: 25%;
+            margin-top: 1.3%;
+            color: grey;
+        }
+        a{
+            text-decoration: none;
+            font-size: 20px;
+            margin-top: 1.3%;
+            margin-left: 0.5%;
+            color: grey;
+        }
+        .contact{
+            margin-left: 1%;
+            font-size: 22px;
+            margin-top: 1.3%;
+            color: grey;
+        }
+        .jobs{
+            font-size: 22px;
+            margin-top: 1.3%;
+            margin-left: 1%;
+            color: grey;
+        }
+        .mes{
+            font-size: 22px;
+            margin-top: 1.3%;
+            margin-left: 1%;
+            color: grey;
+        }
+        .not{
+            font-size: 22px;
+            margin-top: 1.3%;
+            margin-left: 1%;
+            color: grey;
+        }
+        img{
+            width: 5%;
+            margin-left: 8%;
+            border-radius: 50%;
+        }
+        .z{
+            position: relative;
+            right: 1.5%;
+            font-size: 15px;
+            color: green;
+        }
+        .left2{
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            height:70vh;
+            border: 2px solid white;
+            background-color:whitesmoke;
+        }
+        .left2 img{
+            width: 100%;
+            height: 30vh;
+            border-radius: 0%;
+            margin-left: 0%;
+        }
+        .left2{
+            line-height: 1.5;
+        }
+        h3{
+            color:orange
+        }
+        .contents{
+            margin-top: 4%;
+        }
+        span{
+            margin-left: 45%;
+        }
+        .sub span{
+            margin-left: 49%;
+        }
+        hr{
+           margin-top: 4%;
+           border-color: antiquewhite;
+           border: 2px solid grey;
+        
+        }
+        .vertical{
+            border-left: 2px solid grey;
+            height: 110px;
+            margin-left: 50%;
+            margin-top:-22.8%;
+        }
+        .items img{
+            width:10%;
+            height: 10vh;
+            margin-left: 5%;
+            margin-top: 10%;
+        }
+        .items p{
+            margin-top: -14%;
+            margin-left: 20%;
+            font-size: 20px;
+        }
+        .pre img{
+            width: 15%;
+            height: 8vh;
+            margin-left: 10%;
+            margin-top: 19%;
+        }
+        .pre p{
+            margin-left: 30%;
+            margin-top: -24%;
+            font-size: 20px;
+        }
+        .subcontents{
+            display: flex;
+            flex-direction: column;
+            line-height: 2;
+            margin-top: 2%;
+            width: 29.6%;
+            border: 2px solid white;
+            background-color: whitesmoke;
+        }
+        .subcontents h3{
+            margin-left: 2%;
+        }
+        .subcontents img{
+            position: relative;
+            margin-left: 3%;
+            margin-top: 1%
+        }
+        .subcontents span{
+            position:relative;
+            margin-left: 9%;
+            margin-top: -6.5%;
+            font-size: 20px;
+            color: 
+            ;
+        }
+        .subcontents p{
+            text-align: center;
+            font-size: 20px;
+        }
+        .cont1{
+            display: flex;
+        }
+        .cont2{
+            width: 40%;
+            height: 30vh;
+            border: 2px solid whitesmoke;
+            margin-left: 0.3%;
+        }
+        .cont2 img{
+            width: 5%;
+            height: 8vh;
+            border-radius: 50%;
+            position: absolute;
+            left: 23%;
+            top: 15%;
+        }
+        .cont2 textarea{
+            position: relative;
+            left: 18%;
+            border: none;
+            height: 16vh;
+        }
+        .cont2 ::placeholder{
+            text-align: left;
+            position: relative;
+            top: 50%;
+        }
+        .photo img{
+           width: 2%;
+           height: 5vh;
+           margin-left: 9%;
+            margin-top: 10%;
+
+        }
+        .photo p{
+            margin-left: 10%;
+            margin-top: 4%;
+            font-size: 20px;
+            color: gray;
+        }
+        .ver{
+            border-left: 2px solid grey;
+            height:70px;
+            margin-top: -9.7%;
+            margin-left: 22%;
+        }
+        .video img{
+           width: 2%;
+           height: 5vh;
+           margin-left: 17%;
+            margin-top: 10%;
+         }
+         .video p{
+            margin-top: -7.5%;
+            font-size: 20px;
+            margin-left: 30%;
+            color: grey;
+         }
+         .ver1{
+            border-left: 2px solid grey;
+            height:64px;
+            margin-top: -10%;
+            margin-left: 44%;
+         }
+         .event img{
+           width: 2%;
+           height: 3vh;
+           margin-left: 26%;
+            margin-top: 10.5%;
+         }
+         .event p{
+            margin-top: -8%;
+            font-size: 20px;
+            margin-left: 53%;
+            color: grey;
+         }
+         .ver2{
+            border-left: 2px solid grey;
+            height:58px;
+            margin-top: -9%;
+            margin-left: 66%;
+         }
+         .post p{
+            margin-top: -7.5%;
+            font-size: 25px;
+            margin-left: 75%;
+            color: grey;
+         }
+         .hr1 hr{
+            width: 75%;
+            margin-top: 7%;
+         }
+         .hr1 p{
+            margin-left:78%;
+            margin-top: -2.6%;
+            font-size: 20px;
+            
+         }
+         .hr1 i{
+            margin-top: -10.5%;
+            margin-left: 4%;
+         }
+         .cont3{
+            margin-left: 0.2%;
+            width: 30%;
+            height: 63vh;
+            border:2px solid whitesmoke;
+            position: relative;
+            
+         }
+         .cont3 h1{
+            margin-left: 1%;
+            margin-top: 2%;
+           
+         }
+         .cont3 i{
+            position: relative;
+            top: -5%;
+            left: 90%;
+            font-size: 20px;
+            color: blue;
+         }
+         h4{
+            margin-left: 1%;
+         }
+         .cont3 p{
+            margin-top:2%;
+            margin-left: 1%;
+            position: absolute;
+
+         }
+         .cont3 span{
+            position: relative;
+            top: -1.4%;
+            right: 22%;
+            line-height: 3;
+         }
+         .cont3 a{
+            text-decoration: none;
+            color: blue;
+            margin-left: 1%;
+         }
+         .cont4{
+            position:relative;
+            top: 5%;
+            right: 0.6%;
+            width: 100%;
+            height: 45vh;
+            border:2px solid whitesmoke;
+        }
+        .cont4 p{
+            margin-left: 50%;
+            font-size: 20px;
+            color: grey;
+        }
+        .head p{
+            margin-top: 20%;
+            margin-left: 18%;
+        }
+        .head img{
+            margin-top: 30%;
+            margin-left: 33%;
+            width: 20%;
+            height: 15vh;
+        }
+        .mi{
+            margin-top: -48%;
+            height: 15vh;
+            margin-left: 30%;
+        }
+        .mi img{
+            width: 30%;
+        }
+        .cont4 h2{
+            margin-top: 30%;
+            margin-left: 5%;
+            font-size: 15px;
+        }
+        button{
+            width: 35%;
+            height: 5vh;
+            border-radius: 20px;
+            margin-top: -2%;
+            margin-left: 1%;
+            background: none;
+        }
+        .footer {
+            margin-top: 6%;
+            margin-left: 2%;
+            font-size: 30px;
+        }
+        .footer a{
+            color: grey;
+        }
+        .first i{
+            margin-left: -80%;
+            margin-top: 3%;
+        }
+        .first p{
+            margin-top: -4.5%;
+            margin-left: 16%;
+            color: grey;
+        }
+</style>
+</head>
+<body>
+        <div class="nav">
+            <div class="left"><i class="fa-brands fa-linkedin"></i>
+            <input type="search" placeholder="search"><i class="x fa-solid fa-magnifying-glass"></i>
+            <i class="home fa-solid fa-house"></i>
+            <a href="#">Home</a>
+            <i class="contact fa-solid fa-address-book"></i>
+            <a href="#">My Network</a>
+            <i class="jobs fa-solid fa-suitcase"></i>
+            <a href="#">Jobs</a>
+            <i class="mes fa-solid fa-message"></i>
+            <a href="#">Messaging</a>
+            <i class="not fa-solid fa-bell"></i>
+            <a href="#">Notifications</a>
+            <img src="https://image.shutterstock.com/image-photo/young-handsome-man-beard-wearing-260nw-1768126784.jpg">
+            <i class="z fa-solid fa-circle"></i>
+            </div>
+            </div>
+            <div class="cont1">
+            <div class="left2">
+                <img src="cover-pic.png">
+               <h1>Reddy Sekhar Reddy</h1>
+               <h3>Full Stack Trainer at Vector India</h3>
+               <p class="contents">Your profile views<span>1123</span></p>
+               <p class="sub">Your post views <span>923</span></p>
+               <p>Your Connectiions<span>2123</span></p>
+               <hr>
+               <div class="items"><img src="items.png"><p>My items</p></div>
+              <div class="vertical">
+              <div class="pre"><img src="premium.png"><p>Try Premium</p></div>
+              </div>
+            </div>
+            <div class="cont2">
+                <img src="https://image.shutterstock.com/image-photo/young-handsome-man-beard-wearing-260nw-1768126784.jpg"><textarea rows="15" cols="50" placeholder="Write a post"></textarea>
+                <hr>
+                <div class="photo"><img src="photo.png"><p>Photo</p></div>
+                <div class="ver"></div>
+                <div class="video"><img src="video.png"><p>Video</p></div>
+                <div class="ver1"></div>
+                <div class="event"><img src="event.png"><p>Event</p></div>
+                <div class="ver2"></div>
+                <div class="post"><p>Post</p></div>
+                <div class="hr1"><hr><p>Sort by top<i class="fa-solid fa-caret-down"></i></p></div>
+            </div>
+            <div class="cont3">
+                <h1>Trending News</h1>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <h4>High Demand for skilled manpower</h4>
+                <p>1d ago</p><span>10,934 readers</span>
+                <h4>High Demand for Programmers</h4>
+                <p>4d ago</p><span>10,934 readers</span>
+                <h4>High Demand for JS</h4>
+                <p>6d ago</p><span>10,934 readers</span>
+                <h4>High Demand for MERN</h4>
+                <p>9d ago</p><span>10,934 readers</span>
+                <h4>Python is most Demanded Skill</h4>
+                <p>15d ago</p><span>15,934 readers</span>
+                <div class="link"><a href="#">Read more</a></div>
+                <div class="cont4">
+                    <p>Ad</p>
+                    <div class="head">
+                        <p>Master the 5 principles of web design</p>
+                        <img src="https://image.shutterstock.com/image-photo/young-handsome-man-beard-wearing-260nw-1768126784.jpg">
+                        <div class="mi"><img src="mi-logo.png"></div>
+                        <h2>Brand and Demand in Xiamoi<button class="learn"><a href="#">Learn more</a></button></h2></div>
+                    </div>
+                    <div class="footer">
+                        <a href="#">About</a>
+                        <a href="#">Accesibility</a>
+                        <a href="#">Help Centre</a>
+                        <a href="#">Privacy</a>
+                        <a href="#">Policy</a>
+                        <a href="#">Adversting</a>
+                        <a href="#">Get the more</a>
+                        <a href="#">Help</a>
+                    </div>
+                    <div class="footer2">
+                        <div class="first"><i class="fa-brands fa-linkedin"></i><p>Linkme  &copy;2020 All rights reserved</p></div>
+                    </div>
+                 </div>
+            </div>
+            <div class="subcontents">
+                <h3>Recent</h3>
+                <img src="recent.png"><span>Web deveploment</span>
+                <img src="recent.png"><span>User Interface</span>
+                <img src="recent.png"><span>Online learning</span>
+                <img src="recent.png"><span>Learn Online</span>
+                <img src="recent.png"><span>Code Better</span>
+                <img src="recent.png"><span>Group learning</span>
+                    <h3>Groups</h3>
+                    <img src="group.png"><span>Web Development</span>
+                    <img src="group.png"><span>HTML&CSS</span>
+                    <img src="group.png"><span>React</span>
+                    <img src="group.png"><span>Node</span>
+                    <img src="group.png"><span>Python</span>
+                    <img src="group.png"><span>Java</span>
+                    <h3>HASHTAG</h3>
+                    <img src="hashtag.png"><span>Web Development</span>
+                    <img src="hashtag.png"><span>User Interface</span>
+                    <img src="hashtag.png"><span>Online Learning</span>
+                    <hr>
+                    <p>Discover more</p>
+            </div>
+            </div> 
+</body>
+</html>
